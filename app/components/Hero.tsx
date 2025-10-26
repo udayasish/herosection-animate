@@ -75,7 +75,7 @@ const Hero: React.FC = () => {
 
       // Get target position (center of explore button)
       const targetPosition = getElementCenterCoordinates(
-        exploreButtonRef.current
+        exploreButtonRef.current!
       );
 
       //   scrollTimeline.addLabel("animationStart");
