@@ -24,3 +24,17 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+/* Glass shimmer animation for button */
+@keyframes shimmer {
+  0% {
+    transform: translateX(-100%) translateY(-50%) rotate(-20deg);
+  }
+  100% {
+    transform: translateX(400%) translateY(50%) rotate(-20deg);
+  }
+}
+
+.animate-shimmer {
+  animation: shimmer 3s ease-in-out infinite;
+}
