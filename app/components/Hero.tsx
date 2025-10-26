@@ -69,7 +69,7 @@ const Hero: React.FC = () => {
           scrub: ANIMATION_CONFIG.scrubSmoothness,
           pin: true, // Keep hero section visible during animation
           anticipatePin: 1,
-          markers: true, // Set to true to debug scroll points
+          //   markers: true, // Set to true to debug scroll points
         },
       });
 
@@ -268,12 +268,12 @@ const Hero: React.FC = () => {
         >
           <span className="block">
             {displayedLine1}
-            {showCursorOnLine1 && <span className="animate-pulse ml-1">|</span>}
+            {showCursorOnLine1 && <span className="animate-blink ml-1">|</span>}
           </span>
           <span className="block">
             {displayedLine2}
             {!showCursorOnLine1 && (
-              <span className="animate-pulse ml-1">|</span>
+              <span className="animate-blink ml-1">|</span>
             )}
           </span>
         </h1>
@@ -298,7 +298,7 @@ const Hero: React.FC = () => {
 
         <button
           ref={exploreButtonRef}
-          className="nc-Button h-auto inline-flex items-center justify-center rounded-full transition-colors text-base z-[1000] 1.7sm:text-lg font-medium py-3.5 px-8 1.7sm:py-4 1.7sm:px-10 bg-[rgb(2,132,199)] hover:bg-[hsl(201,96.30%,32.20%)] text-neutral-50 dark:bg-transparent dark:border whitespace-nowrap dark:border-neutral-700 dark:text-neutral-300 dark:hover:bg-neutral-800 w-auto min-w-[200px] 1.7sm:min-w-[250px] overflow-hidden shine-infinite relative mt-10"
+          className="nc-Button h-auto inline-flex items-center justify-center rounded-full transition-colors text-base z-[1000] 1.7sm:text-lg font-medium py-3.5 px-8 1.7sm:py-4 1.7sm:px-10 bg-[rgb(2,132,199)] hover:bg-[hsl(201,96.30%,32.20%)] text-neutral-50 dark:bg-transparent dark:border whitespace-nowrap dark:border-neutral-700 dark:text-neutral-300 dark:hover:bg-neutral-800 w-auto min-w-[200px] 1.7sm:min-w-[250px] overflow-hidden shine-infinite relative mt-10 cursor-pointer"
         >
           {/* Shimmer effect */}
           <span className="absolute inset-0 w-[200%] h-[200%] -top-1/2 -left-1/2 animate-shimmer bg-gradient-to-r from-transparent via-white/30 to-transparent"></span>
